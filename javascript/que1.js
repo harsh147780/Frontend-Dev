@@ -18,6 +18,5 @@ if(isRemote){
 }
 
 let totalCost = orderAmount + deliveryFee;
-console.log("hello");
 console.log(`Total Cost: ₹${totalCost}`);
 console.log(`Estimated Delivery Time: ${deliveryDays} days`);
