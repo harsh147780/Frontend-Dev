@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Step Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>3-Step Form</h2>
+
+    <!-- Step 1 -->
+    <div class="step" id="step1">
+      <label>Name:</label>
+      <input type="text" id="nameInput">
+      <div class="buttons">
+        <button id="next1">Next</button>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step" id="step2" style="display:none;">
+      <label>Email:</label>
+      <input type="email" id="emailInput">
+      <div class="buttons">
+        <button id="back2">Back</button>
+        <button id="next2">Next</button>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step" id="step3" style="display:none;">
+      <label>Password:</label>
+      <input type="password" id="passInput">
+      <div class="buttons">
+        <button id="back3">Back</button>
+        <button id="finish">Finish</button>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="step" id="summary" style="display:none;">
+      <h3>Summary</h3>
+      <p id="sumName"></p>
+      <p id="sumEmail"></p>
+      <p id="sumPassword"></p>
+    </div>
+  </div>
+
+  <script src="question3.js"></script>
+</body>
+</html>
